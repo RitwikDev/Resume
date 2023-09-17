@@ -3,7 +3,7 @@ using UnityEngine;
 public class Movement : AbstractMovement
 {
     private float moveDirection;
-    public float momentumFactor = 0;
+    private float momentumFactor = 0;
 
     public void Update()
     {
