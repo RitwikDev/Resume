@@ -4,7 +4,7 @@ public abstract class AbstractMovement : MonoBehaviour
 {
     protected CharacterController characterController;
     protected GroundCheck groundCheck;
-    public Vector3 velocity;
+    protected Vector3 velocity;
     protected bool isGrounded;
 
     private float factor = 1.5f;
