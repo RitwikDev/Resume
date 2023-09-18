@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     public void Start()
     {
         exists = true;
+        Destroy(gameObject, 5);
     }
 
     public void AddForce(Vector2 direction)
