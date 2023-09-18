@@ -5,11 +5,15 @@ public class Input : MonoBehaviour
 {
     public InputAction gameplay2DActions;
 
-    private Movement movement;
+    private Character character;
+    private PMovement movement;
+    private PFire fire;
 
     public void Start()
     {
-        movement = gameObject.GetComponent<Movement>();
+        character = GetComponent<Character>();
+        movement = GetComponent<PMovement>();
+        fire = GetComponent<PFire>();
     }
 
     public void OnEnable()
@@ -26,7 +30,10 @@ public class Input : MonoBehaviour
     {
         if (context.performed || context.canceled)
         {
-            movement.Move(context.ReadValue<float>());
+            Vector2 input = context.ReadValue<Vector2>();
+
+            movement.Move(input.x);
+            character.SetLookDirection(input);
         }
     }
 
@@ -35,6 +42,14 @@ public class Input : MonoBehaviour
         if (context.performed)
         {
             movement.Jump();
+        }
+    }
+
+    public void OnFire(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            fire.Fire();
         }
     }
 }
