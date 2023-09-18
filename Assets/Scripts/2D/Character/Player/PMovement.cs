@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movement : AbstractMovement
+public class PMovement : AbstractMovement
 {
     private float moveDirection;
     private float momentumFactor = 0;
@@ -25,9 +25,23 @@ public class Movement : AbstractMovement
         }
     }
 
-    public override void Move(float moveValue)
+    public void Move(float moveValue)
     {
-        moveDirection = moveValue;
+        moveDirection = moveValue > 0 ? 1 : (moveValue < 0 ? -1 : 0);
+        RotatePlayer();
+    }
+
+    private void RotatePlayer()
+    {
+        if (moveDirection == 1)
+        {
+            transform.rotation = Quaternion.Euler(Vector3.zero);
+        }
+
+        else if (moveDirection == -1)
+        {
+            transform.rotation = Quaternion.Euler(Vector3.down * 180);
+        }
     }
 
     private void HandleMomentum()

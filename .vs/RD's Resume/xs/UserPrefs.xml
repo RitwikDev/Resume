@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{4A2D64D5-464A-D42F-3C27-DD188C9C8D0B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/2D/Character/Player/Movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/2D/Character/Character.cs">
     <Files>
-      <File FileName="Assets/Scripts/2D/Character/AbstractMovement.cs" Line="36" Column="6" />
-      <File FileName="Assets/Scripts/2D/Character/Player/Movement.cs" Line="6" Column="11" />
-      <File FileName="Assets/Scripts/Common/PlayerConstants.cs" Line="4" Column="40" />
+      <File FileName="Assets/Scripts/2D/Character/Player/Input.cs" Line="44" Column="24" />
+      <File FileName="Assets/Scripts/2D/Character/Player/PFire.cs" Line="36" Column="25" />
+      <File FileName="Assets/Scripts/2D/Weapon/Bullet.cs" Line="12" Column="5" />
+      <File FileName="Assets/Scripts/2D/Character/Character.cs" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +14,10 @@
               <Node name="Scripts" expanded="True">
                 <Node name="2D" expanded="True">
                   <Node name="Character" expanded="True">
-                    <Node name="Player" expanded="True">
-                      <Node name="Movement.cs" selected="True" />
-                    </Node>
+                    <Node name="Player" expanded="True" />
+                    <Node name="Character.cs" selected="True" />
                   </Node>
+                  <Node name="Weapon" expanded="True" />
                 </Node>
                 <Node name="Common" expanded="True" />
               </Node>
@@ -24,19 +25,11 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Unity" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4da640e4-497b-4bec-8c06-51b64bc5a23c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="67b1ca2a-941c-421a-a601-16da0d965228" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

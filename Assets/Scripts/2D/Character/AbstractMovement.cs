@@ -5,6 +5,7 @@ public abstract class AbstractMovement : MonoBehaviour
     protected CharacterController characterController;
     protected GroundCheck groundCheck;
     protected Vector3 velocity;
+    protected Character character;
     protected bool isGrounded;
 
     private float factor = 1.5f;
@@ -13,6 +14,7 @@ public abstract class AbstractMovement : MonoBehaviour
     {
         characterController = gameObject.GetComponent<CharacterController>();
         groundCheck = gameObject.GetComponentInChildren<GroundCheck>();
+        character = gameObject.GetComponent<Character>();
     }
 
     protected void ApplyGravity()
@@ -37,8 +39,7 @@ public abstract class AbstractMovement : MonoBehaviour
         if (isGrounded)
         {
             velocity.y = velocity.y + Mathf.Sqrt(CharacterConstants.JUMP_HEIGHT * -CharacterConstants.GRAVITY);
+            character.isJumping = true;
         }
     }
-
-    public abstract void Move(float moveValue = 0);
 }

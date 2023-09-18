@@ -58,13 +58,17 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.7f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/2D/Character/Player/PFire.cs" />
     <Compile Include="Assets/Scripts/2D/Character/Player/Input.cs" />
+    <Compile Include="Assets/Scripts/2D/Weapon/Bullet.cs" />
     <Compile Include="Assets/Scripts/Common/CharacterConstants.cs" />
+    <Compile Include="Assets/Scripts/Common/Tags.cs" />
+    <Compile Include="Assets/Scripts/2D/Character/Character.cs" />
     <Compile Include="Assets/Scripts/2D/Character/GroundCheck.cs" />
-    <Compile Include="Assets/Scripts/2D/Character/Player/Movement.cs" />
-    <Compile Include="Assets/Scripts/2D/Character/Tags.cs" />
+    <Compile Include="Assets/Scripts/2D/Character/Player/PMovement.cs" />
     <Compile Include="Assets/Scripts/2D/Character/AbstractMovement.cs" />
     <Compile Include="Assets/Scripts/Common/PlayerConstants.cs" />
+    <Compile Include="Assets/Scripts/2D/Character/Player/PGun.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
